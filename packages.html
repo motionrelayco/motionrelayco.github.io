@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <!-- SEO: Primary Meta Tags -->
+  <meta name="description" content="Transparent pricing for Meta ads management. Three clear packages built for Australian businesses ready to grow through paid social."/>
+  <meta name="keywords" content="marketing agency Australia, Meta ads Australia, digital marketing agency, videography Australia, photography Australia, UGC content, social media marketing, Facebook ads, Instagram ads, creative agency Australia, motion relay"/>
+  <meta name="author" content="Motion Relay"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://motionrelayco.com/packages.html"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://motionrelayco.com/packages.html"/>
+  <meta property="og:title" content="Pricing Packages. Motion Relay."/>
+  <meta property="og:description" content="Transparent pricing for Meta ads management. Three clear packages built for Australian businesses ready to grow through paid social."/>
+  <meta property="og:image" content="https://motionrelayco.com/og-image.svg"/>
+  <meta property="og:site_name" content="Motion Relay"/>
+  <meta property="og:locale" content="en_AU"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Pricing Packages. Motion Relay."/>
+  <meta name="twitter:description" content="Transparent pricing for Meta ads management. Three clear packages built for Australian businesses ready to grow through paid social."/>
+  <meta name="twitter:image" content="https://motionrelayco.com/og-image.svg"/>
+<title>Pricing Packages. Motion Relay, Meta Ads Agency Australia.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0d0d;
+  --surface:#141414;
+  --card:#161616;
+  --border:#222;
+  --border-bright:#333;
+  --dark:#1a1a1a;
+  --mid:#666;
+  --light:#555;
+  --silver:#888;
+  --pale:#bbb;
+  --white:#f0f0f0;
+  --accent:#c8a96e;
+  --accent-dim:rgba(200,169,110,.12);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:var(--sans);font-weight:300;overflow-x:hidden;min-height:100vh;}
+a{color:inherit;text-decoration:none}
+
+/* GRAIN */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* TOP LINE */
+body::after{content:'';position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);z-index:100}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s ease}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.12s}.reveal-d2{transition-delay:.24s}.reveal-d3{transition-delay:.36s}
+
+/*── PAGE HERO ──*/
+.page-hero{
+  position:relative;
+  padding:160px 56px 100px;
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+  z-index:1;
+}
+.hero-glow{
+  position:absolute;top:-100px;left:50%;transform:translateX(-50%);
+  width:700px;height:500px;
+  background:radial-gradient(ellipse,rgba(200,169,110,.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.ph-label{
+  font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.ph-label::before{content:'';display:block;width:24px;height:1px;background:var(--accent)}
+.ph-title{
+  font-family:var(--serif);font-size:clamp(3rem,8vw,8rem);
+  font-weight:700;letter-spacing:-.03em;line-height:.88;color:var(--white);
+}
+.ph-title em{font-style:italic;font-weight:400;color:rgba(255,255,255,.4)}
+.ph-sub{
+  margin-top:28px;font-size:.92rem;line-height:1.85;
+  color:var(--silver);max-width:520px;
+}
+
+/*── SECTION ──*/
+.section{padding:100px 56px;border-bottom:1px solid var(--border);position:relative;z-index:1;}
+.sec-label{
+  font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:56px;
+  display:flex;align-items:center;gap:12px;
+}
+.sec-label::before{content:'';display:block;width:24px;height:1px;background:var(--accent)}
+
+/*── PACKAGES GRID ──*/
+.packages-grid{
+  display:grid;
+  grid-template-columns:1fr 1.08fr 1fr;
+  gap:2px;
+  align-items:stretch;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+/*── CARD BASE ──*/
+.pkg{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:48px 36px 44px;
+  display:flex;flex-direction:column;
+  position:relative;
+  transition:border-color .35s, transform .3s ease-out, box-shadow .3s ease-out;
+  cursor:pointer;
+}
+.pkg:hover{
+  border-color:var(--border-bright);
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
+
+/* FEATURED card */
+.pkg.featured{
+  background:#111;
+  border-color:var(--accent);
+  padding-top:56px;
+  padding-bottom:44px;
+}
+.pkg.featured:hover{
+  border-color:rgba(200,169,110,.8);
+  transform:translateY(-10px);
+  box-shadow:0 20px 40px rgba(0,0,0,.4), 0 0 30px rgba(200,169,110,.2);
+}
+
+/* Most Popular badge */
+.pkg-badge{
+  position:absolute;top:-1px;left:50%;transform:translateX(-50%);
+  font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;
+  background:var(--accent);color:#000;
+  padding:6px 20px;white-space:nowrap;
+  font-weight:500;
+}
+
+.pkg-num{
+  font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--light);margin-bottom:24px;
+}
+.pkg.featured .pkg-num{color:var(--accent)}
+
+.pkg-name{
+  font-family:var(--serif);font-size:clamp(1.6rem,2.5vw,2.2rem);
+  font-weight:700;letter-spacing:-.02em;line-height:1;
+  color:var(--white);margin-bottom:8px;
+}
+.pkg-tagline{
+  font-size:.8rem;line-height:1.65;color:var(--silver);
+  margin-bottom:36px;
+}
+.pkg.featured .pkg-tagline{color:rgba(255,255,255,.6)}
+
+.pkg-price{
+  font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.2rem);
+  font-weight:700;letter-spacing:-.03em;line-height:1;
+  color:var(--white);margin-bottom:4px;
+}
+.pkg.featured .pkg-price{color:var(--accent)}
+.pkg-price-note{
+  font-size:.68rem;color:var(--light);margin-bottom:36px;letter-spacing:.06em;
+}
+
+.pkg-divider{border:none;border-top:1px solid var(--border);margin-bottom:28px}
+.pkg.featured .pkg-divider{border-color:rgba(200,169,110,.2)}
+
+.pkg-includes{
+  font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--light);margin-bottom:18px;
+}
+.pkg.featured .pkg-includes{color:var(--accent)}
+
+.pkg-list{
+  list-style:none;
+  display:flex;flex-direction:column;gap:12px;
+  flex:1;
+  margin-bottom:0;
+}
+.pkg-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:.82rem;line-height:1.5;color:var(--silver);
+}
+.pkg.featured .pkg-list li{color:rgba(255,255,255,.75)}
+.pkg-list li .check{
+  flex-shrink:0;width:16px;height:16px;margin-top:1px;
+  border-radius:50%;border:1px solid var(--border-bright);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.55rem;color:var(--silver);
+}
+.pkg.featured .pkg-list li .check{
+  border-color:var(--accent);color:var(--accent);
+}
+.pkg-list li.strong{color:var(--white);font-weight:500}
+
+.pkg-cta{
+  display:block;margin-top:36px;text-align:center;
+  font-family:var(--sans);font-size:.7rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:16px 24px;transition:all .3s;
+}
+/* default CTA */
+.pkg .pkg-cta{
+  color:var(--pale);border:1px solid var(--border-bright);
+}
+.pkg .pkg-cta:hover{background:var(--white);color:#000;border-color:var(--white)}
+/* featured CTA */
+.pkg.featured .pkg-cta{
+  background:var(--accent);color:#000;border:1px solid var(--accent);
+}
+.pkg.featured .pkg-cta:hover{background:var(--white);border-color:var(--white)}
+
+/*── NOTE STRIP ──*/
+.note-strip{
+  padding:64px 56px;
+  border-bottom:1px solid var(--border);
+  position:relative;z-index:1;
+}
+.note-inner{
+  max-width:820px;margin:0 auto;
+  display:flex;gap:60px;align-items:flex-start;flex-wrap:wrap;
+}
+.note-left h3{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.2;
+  color:var(--white);min-width:200px;
+}
+.note-right p{font-size:.85rem;line-height:1.9;color:var(--silver);margin-bottom:12px}
+
+/*── CTA BAND ──*/
+.cta-band{
+  padding:140px 56px;text-align:center;
+  position:relative;z-index:1;
+  border-bottom:1px solid var(--border);
+}
+.cta-band-glow{
+  position:absolute;bottom:-100px;left:50%;transform:translateX(-50%);
+  width:600px;height:400px;
+  background:radial-gradient(ellipse,rgba(200,169,110,.05) 0%,transparent 70%);
+  pointer-events:none;
+}
+.cta-band h2{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.8rem,4.5vw,5rem);
+  color:rgba(255,255,255,.5);line-height:1.1;margin-bottom:8px;
+}
+.cta-band p{
+  font-family:var(--sans);font-weight:500;
+  font-size:clamp(1.8rem,4.5vw,5rem);
+  color:var(--white);line-height:1;letter-spacing:-.02em;margin-bottom:52px;
+}
+.cta-btn{
+  display:inline-block;font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:#000;background:var(--accent);
+  padding:18px 52px;transition:all .3s;
+}
+.cta-btn:hover{background:var(--white)}
+
+/*── FOOTER ──*/
+footer{
+  padding:56px;
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:start;
+  border-top:1px solid var(--border);
+  position:relative;z-index:1;
+}
+.ft-logo{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--white);margin-bottom:8px}
+.ft-copy{font-size:.68rem;color:var(--light);line-height:1.8}
+.ft-nav{display:flex;flex-direction:column;gap:12px;align-items:center}
+.ft-nav a{font-size:.72rem;color:var(--silver);transition:color .25s;}
+.ft-nav a:hover{color:var(--white)}
+.ft-contact{text-align:right}
+.ft-contact p{font-size:.72rem;color:var(--silver);line-height:2.2}
+.ft-contact a{color:var(--silver);transition:color .25s;}
+.ft-contact a:hover{color:var(--white)}
+.ft-socials{display:flex;gap:20px;justify-content:flex-end;margin-top:10px}
+.ft-socials a{font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--light);border-bottom:1px solid transparent;padding-bottom:1px;transition:color .25s,border-color .25s;}
+.ft-socials a:hover{color:var(--white);border-color:var(--white)}
+
+/*── MOBILE ──*/
+@media(max-width:900px){
+  .page-hero{padding:120px 24px 72px}
+  .section{padding:72px 24px}
+  .packages-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .pkg.featured{padding-top:56px}
+  .pkg-tagline{min-height:auto}
+  .note-strip{padding:56px 24px}
+  .note-inner{flex-direction:column;gap:24px}
+  .cta-band{padding:100px 24px}
+  footer{grid-template-columns:1fr;gap:28px;padding:48px 24px}
+  .ft-nav{align-items:flex-start}
+  .ft-contact{text-align:left}
+  .ft-socials{justify-content:flex-start}
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="hero-glow"></div>
+  <p class="ph-label reveal">Pricing</p>
+  <h1 class="ph-title reveal">Simple,<br/><em>transparent</em><br/>packages.</h1>
+  <p class="ph-sub reveal">Three clear tiers. No hidden fees. Every package is built to grow your business through Meta advertising. Done properly, from day one.</p>
+</div>
+
+<!-- PACKAGES SECTION -->
+<section class="section">
+  <div class="sec-label reveal">Choose Your Package</div>
+
+  <div class="packages-grid">
+
+    <!-- CARD 1: STARTER -->
+    <div class="pkg reveal">
+      <div class="pkg-num">01 / Starter</div>
+      <h2 class="pkg-name">Starter</h2>
+      <p class="pkg-tagline">Everything you need to run your first Meta ad. Done for you.</p>
+      <div class="pkg-price">[PRICE]</div>
+      <p class="pkg-price-note">Per month · AUD</p>
+      <hr class="pkg-divider"/>
+      <p class="pkg-includes">What's included</p>
+      <ul class="pkg-list">
+        <li><span class="check">✓</span>Meta Business Suite & Ad Account setup</li>
+        <li><span class="check">✓</span>Facebook Pixel & event tracking</li>
+        <li><span class="check">✓</span>Audience research & targeting setup</li>
+        <li><span class="check">✓</span>Analytics dashboard setup</li>
+        <li><span class="check">✓</span>1 campaign created and launched</li>
+        <li><span class="check">✓</span>Single ad format</li>
+        <li><span class="check">✓</span>Monthly performance summary</li>
+      </ul>
+      <a href="contact.html?package=starter" class="pkg-cta">Get Started</a>
+    </div>
+
+    <!-- CARD 2: ESSENTIAL (FEATURED) -->
+    <div class="pkg featured reveal reveal-d1">
+      <div class="pkg-badge">Most Popular</div>
+      <div class="pkg-num">02 / Essential</div>
+      <h2 class="pkg-name">Essential</h2>
+      <p class="pkg-tagline">Consistent, managed ads that work harder as they learn.</p>
+      <div class="pkg-price">[PRICE]</div>
+      <p class="pkg-price-note">Per month · AUD</p>
+      <hr class="pkg-divider"/>
+      <p class="pkg-includes">What's included</p>
+      <ul class="pkg-list">
+        <li class="strong"><span class="check">✓</span>Everything in Starter</li>
+        <li><span class="check">✓</span>Campaign planning & strategy</li>
+        <li><span class="check">✓</span>Active campaign management</li>
+        <li><span class="check">✓</span>Multiple ad formats</li>
+        <li><span class="check">✓</span>Budget reallocation to best performers</li>
+        <li><span class="check">✓</span>A/B split testing</li>
+        <li><span class="check">✓</span>Retargeting setup</li>
+        <li><span class="check">✓</span>Ongoing analytics & reporting</li>
+      </ul>
+      <a href="contact.html?package=essential" class="pkg-cta">Start Growing</a>
+    </div>
+
+    <!-- CARD 3: GROWTH -->
+    <div class="pkg reveal reveal-d2">
+      <div class="pkg-num">03 / Growth</div>
+      <h2 class="pkg-name">Growth</h2>
+      <p class="pkg-tagline">Full-service Meta ads management built for serious growth.</p>
+      <div class="pkg-price">[PRICE]</div>
+      <p class="pkg-price-note">Per month · AUD</p>
+      <hr class="pkg-divider"/>
+      <p class="pkg-includes">What's included</p>
+      <ul class="pkg-list">
+        <li class="strong"><span class="check">✓</span>Everything in Essential</li>
+        <li><span class="check">✓</span>Multiple simultaneous campaigns</li>
+        <li><span class="check">✓</span>Full funnel strategy</li>
+        <li><span class="check">✓</span>All ad formats</li>
+        <li><span class="check">✓</span>Cross-campaign budget optimisation</li>
+        <li><span class="check">✓</span>Monthly report with recommendations</li>
+        <li><span class="check">✓</span>Priority support & strategy calls</li>
+      </ul>
+      <a href="contact.html?package=growth" class="pkg-cta">Let's Scale</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- NOTE -->
+<div class="note-strip">
+  <div class="note-inner">
+    <div class="note-left reveal">
+      <h3>A note on pricing.</h3>
+    </div>
+    <div class="note-right reveal reveal-d2">
+      <p>All prices are in AUD and exclude your ad spend budget. That goes directly to Meta and is fully controlled by you at all times. Our fee covers strategy, management, creative direction and reporting.</p>
+      <p>Not sure which tier is right for you? Reach out and we'll recommend the best starting point for your goals and budget. No pressure, no commitment.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-band-glow"></div>
+  <h2 class="reveal">Not sure where</h2>
+  <p class="reveal">to start?</p>
+  <a href="contact.html" class="cta-btn reveal">Talk to Us</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <div class="ft-logo">
+      <div style="font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:700;font-size:1.3rem;letter-spacing:-.02em;color:#f0f0f0;line-height:.95;">Motion</div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:3px;width:100%;">
+        <div style="flex:1;height:1px;background:rgba(255,255,255,.2);"></div>
+        <div style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:.38rem;letter-spacing:.25em;text-transform:uppercase;color:#777;white-space:nowrap;">Relay</div>
+      </div>
+    </div>
+    <p class="ft-copy">© 2025 Motion Relay.<br/>All rights reserved.<br/>Based in Australia.<br/>ABN: <span id="abn-number">[ADD ABN HERE]</span></p>
+  </div>
+  <nav class="ft-nav">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Work</a>
+    <a href="packages.html">Packages</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+  <div class="ft-contact">
+    <p><a href="mailto:motionrelayco@gmail.com">motionrelayco@gmail.com</a></p>
+    <p>Australia · Available Worldwide</p>
+    <div class="ft-socials">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+<script src="header.js"></script>
+</body>
+</html>

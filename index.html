@@ -190,6 +190,75 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
 @keyframes up{to{opacity:1;transform:none}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
+/*── BOLD TEXT UPGRADES ──*/
+.hero-line2{font-weight:800!important;}
+.projects-heading{font-weight:900!important;letter-spacing:-.03em!important;}
+.cta-band-l2{font-weight:800!important;}
+
+/*── PARALLAX – inner image overflows container slightly ──*/
+.proj-img{overflow:hidden;}
+.proj-img-ph{
+  position:absolute;top:-10%;left:0;
+  width:100%;height:120%;
+  will-change:transform;
+}
+
+/*── ENHANCED CARD HOVER ──*/
+.proj-card{
+  transition:box-shadow .4s ease;
+}
+.proj-card:hover{
+  box-shadow:0 20px 48px rgba(0,0,0,.12);
+}
+.proj-card:hover .proj-img-ph{
+  opacity:1; /* let parallax handle movement */
+}
+.testi-card{
+  transition:border-color .3s ease,background .3s ease;
+}
+.testi-card:hover{
+  background:rgba(255,255,255,.04)!important;
+  border-color:rgba(255,255,255,.25)!important;
+}
+
+/*── PILLAR HOVER ──*/
+.pillar{
+  transition:background .25s ease;
+  border-radius:2px;
+}
+.pillar:hover{background:var(--bg-alt);}
+
+/*── MAGNETIC wrapper ──*/
+.magnetic{display:inline-block;}
+
+/*── CUSTOM CURSOR ──*/
+body{cursor:none;}
+#mr-cursor-ring{
+  position:fixed;top:0;left:0;
+  width:40px;height:40px;
+  border:1.5px solid rgba(26,26,26,.35);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:99998;
+  transition:box-shadow .25s ease,border-color .25s ease;
+}
+#mr-cursor-ring.hover{
+  box-shadow:0 0 0 18px rgba(26,26,26,.07);
+  border-color:rgba(26,26,26,.6);
+}
+#mr-cursor-dot{
+  position:fixed;top:0;left:0;
+  width:6px;height:6px;
+  background:var(--dark);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:99999;
+}
+@media(max-width:900px){
+  body{cursor:auto;}
+  #mr-cursor-ring,#mr-cursor-dot{display:none;}
+}
+
 /*── MOBILE ──*/
 @media(max-width:900px){
   .section{padding:80px 24px}
@@ -235,7 +304,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
     <p class="hero-line2">empowered by results.</p>
     <p class="hero-services">Digital Marketing. Videography. Photography.</p>
     <p class="hero-sub">We help businesses grow through strategic content, stunning visuals, and performance-driven marketing. All under one roof.</p>
-    <a href="contact.html" class="hero-cta">Work With Us</a>
+    <a href="contact.html" class="hero-cta magnetic">Work With Us</a>
   </div>
   <div class="hero-scroll">
     <span>Scroll</span>
@@ -248,7 +317,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
   <div class="intro-inner">
     <div class="intro-left reveal">
       <p class="sec-label">About</p>
-      <h2>Your creative<br/>brand partner.</h2>
+      <h2 class="text-reveal">Your creative<br/>brand partner.</h2>
     </div>
     <div class="intro-right reveal reveal-d2">
       <p>We're an Australian creative studio that blends high-end visual production with performance marketing. From cinematic video to paid social campaigns, everything we create is built to grow your business.</p>
@@ -276,11 +345,11 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
 <section class="section" id="projects">
   <div class="projects-inner">
     <div class="sec-label reveal">Portfolio</div>
-    <h2 class="projects-heading reveal">Our Projects.</h2>
+    <h2 class="projects-heading reveal text-reveal">Our Projects.</h2>
     <div class="proj-grid">
 
       <!-- ROW 1: full-width landscape -->
-      <div class="proj-card proj-card-landscape reveal">
+      <div class="proj-card proj-card-landscape reveal tilt-card">
         <div class="proj-img">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -290,7 +359,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
       </div>
 
       <!-- ROW 2: 2 reels + 2 stacked photos -->
-      <div class="proj-card proj-reel reveal reveal-d1" style="grid-column:1/2;">
+      <div class="proj-card proj-reel reveal reveal-d1 tilt-card" style="grid-column:1/2;">
         <div class="proj-img" style="aspect-ratio:9/16;">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -299,7 +368,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         <div class="proj-cat">Videography</div>
       </div>
 
-      <div class="proj-card proj-reel reveal reveal-d2" style="grid-column:2/3;">
+      <div class="proj-card proj-reel reveal reveal-d2 tilt-card" style="grid-column:2/3;">
         <div class="proj-img" style="aspect-ratio:9/16;">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -328,7 +397,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
       </div>
 
       <!-- ROW 3: 2 x 16:9 -->
-      <div class="proj-card proj-card-wide reveal reveal-d1" style="grid-column:1/3;">
+      <div class="proj-card proj-card-wide reveal reveal-d1 tilt-card" style="grid-column:1/3;">
         <div class="proj-img" style="aspect-ratio:16/9;">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -337,7 +406,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         <div class="proj-cat">Photography</div>
       </div>
 
-      <div class="proj-card proj-card-wide reveal reveal-d2" style="grid-column:3/4;">
+      <div class="proj-card proj-card-wide reveal reveal-d2 tilt-card" style="grid-column:3/4;">
         <div class="proj-img" style="aspect-ratio:4/3;">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -347,7 +416,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
       </div>
 
       <!-- ROW 4: 3 x 1:1 -->
-      <div class="proj-card proj-card-sq reveal reveal-d1">
+      <div class="proj-card proj-card-sq reveal reveal-d1 tilt-card">
         <div class="proj-img">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -356,7 +425,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         <div class="proj-cat">Videography</div>
       </div>
 
-      <div class="proj-card proj-card-sq reveal reveal-d2">
+      <div class="proj-card proj-card-sq reveal reveal-d2 tilt-card">
         <div class="proj-img">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -365,7 +434,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         <div class="proj-cat">Photography</div>
       </div>
 
-      <div class="proj-card proj-card-sq reveal reveal-d3">
+      <div class="proj-card proj-card-sq reveal reveal-d3 tilt-card">
         <div class="proj-img">
           <div class="proj-img-ph"></div>
           <div class="proj-overlay"><span class="proj-view">View Case Study →</span></div>
@@ -386,13 +455,13 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
   <div class="phil-inner">
     <div class="phil-left reveal">
       <p class="sec-label">Our Approach</p>
-      <p class="phil-quote">"Craft that connects. Strategy that converts."</p>
+      <p class="phil-quote text-reveal">"Craft that connects. Strategy that converts."</p>
     </div>
     <div class="phil-right reveal reveal-d2">
       <p>We don't separate creativity from performance. Every film we shoot, every photo we take, and every campaign we run is designed with your growth in mind.</p>
       <p>Our team brings together the disciplines of visual storytelling and digital marketing. So your content doesn't just look good, it works.</p>
       <p>Whether you need a single brand film or an ongoing content and marketing partnership, we build around your goals.</p>
-      <a href="contact.html" class="phil-btn">Start a Project</a>
+      <a href="contact.html" class="phil-btn magnetic">Start a Project</a>
     </div>
   </div>
 </section>
@@ -400,10 +469,10 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
 <!--════════ TESTIMONIALS ════════-->
 <section class="section" id="testimonials" style="background:var(--dark);border-bottom:1px solid #1a1a1a;">
   <div class="testi-inner">
-    <p class="testi-heading reveal">What our clients say.</p>
+    <p class="testi-heading reveal text-reveal">What our clients say.</p>
     <div class="testi-grid">
 
-      <div class="testi-card reveal">
+      <div class="testi-card reveal tilt-card">
         <div class="testi-quote">
           <!-- Replace with real client quote -->
           The team at Motion Relay completely transformed how our brand shows up online. Our Meta ads are now actually converting and the content they produced is exceptional.
@@ -414,7 +483,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         </div>
       </div>
 
-      <div class="testi-card reveal reveal-d1">
+      <div class="testi-card reveal reveal-d1 tilt-card">
         <div class="testi-quote">
           <!-- Replace with real client quote -->
           From shoot day through to campaign launch, the whole process was seamless. Professional, creative, and they actually understand performance marketing.
@@ -425,7 +494,7 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
         </div>
       </div>
 
-      <div class="testi-card reveal reveal-d2">
+      <div class="testi-card reveal reveal-d2 tilt-card">
         <div class="testi-quote">
           <!-- Replace with real client quote -->
           We saw a significant improvement in our cost per lead within the first month. The creative quality matched with smart targeting made a real difference.
@@ -472,9 +541,9 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
 <!--════════ CTA BAND ════════-->
 <section id="cta-band">
   <div class="reveal">
-    <p class="cta-band-l1">Find your competitive edge and</p>
-    <p class="cta-band-l2">make your mark.</p>
-    <a href="contact.html" class="cta-band-link">Get in touch →</a>
+    <p class="cta-band-l1 text-reveal">Find your competitive edge and</p>
+    <p class="cta-band-l2 text-reveal">make your mark.</p>
+    <a href="contact.html" class="cta-band-link magnetic">Get in touch →</a>
   </div>
 </section>
 
@@ -507,17 +576,17 @@ footer{background:var(--bg-alt);border-top:1px solid var(--border);padding:60px 
 </footer>
 
 <script>
-/*── Scroll reveal ──*/
-const revEls=document.querySelectorAll('.reveal');
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
-},{threshold:0.1});
-revEls.forEach(el=>obs.observe(el));
-
 /*── Video hero ──*/
 const hv=document.getElementById('heroVid');
 if(hv&&hv.src&&hv.src!==window.location.href){hv.style.display='block';const ph=document.querySelector('.hero-ph');if(ph)ph.style.display='none';}
 </script>
+<!-- Free animation libraries (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
 <script src="header.js"></script>
+<script src="animations.js"></script>
 </body>
 </html>

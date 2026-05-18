@@ -312,6 +312,13 @@ footer{
   .ft-contact{text-align:left}
   .ft-socials{justify-content:flex-start}
 }
+/*── ANIMATIONS.JS SUPPORT ──*/
+.magnetic{display:inline-block;}
+body{cursor:none;}
+#mr-cursor-ring{position:fixed;top:0;left:0;width:40px;height:40px;border:1.5px solid rgba(26,26,26,.35);border-radius:50%;pointer-events:none;z-index:99998;transition:box-shadow .25s ease,border-color .25s ease;}
+#mr-cursor-ring.hover{box-shadow:0 0 0 18px rgba(26,26,26,.07);border-color:rgba(26,26,26,.6);}
+#mr-cursor-dot{position:fixed;top:0;left:0;width:6px;height:6px;background:var(--dark);border-radius:50%;pointer-events:none;z-index:99999;}
+@media(max-width:900px){body{cursor:auto;}#mr-cursor-ring,#mr-cursor-dot{display:none;}}
 </style>
 </head>
 <body>
@@ -448,12 +455,13 @@ footer{
   </div>
 </footer>
 
-<script>
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
-},{threshold:0.08});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-</script>
+<!-- Free animation libraries (CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
 <script src="header.js"></script>
+<script src="animations.js"></script>
 </body>
 </html>

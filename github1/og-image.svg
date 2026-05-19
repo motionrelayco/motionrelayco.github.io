@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&amp;family=DM+Sans:wght@300&amp;display=swap');
+    </style>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <radialGradient id="spotlight" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#spotlight)"/>
+
+  <!-- Grain texture simulation via subtle lines -->
+  <rect width="1200" height="1" y="210" fill="#ffffff" opacity="0.04"/>
+  <rect width="1200" height="1" y="420" fill="#ffffff" opacity="0.02"/>
+
+  <!-- Top border line -->
+  <rect width="1200" height="1" fill="#222222"/>
+
+  <!-- Bottom border line -->
+  <rect width="1200" height="1" y="629" fill="#222222"/>
+
+  <!-- Left accent line -->
+  <rect width="2" height="630" fill="#333333" opacity="0.5"/>
+
+  <!-- MOTION - large italic serif -->
+  <text
+    x="80"
+    y="360"
+    font-family="'Playfair Display', Georgia, serif"
+    font-style="italic"
+    font-weight="700"
+    font-size="200"
+    fill="#f0f0f0"
+    letter-spacing="-4"
+  >Motion</text>
+
+  <!-- Horizontal rule -->
+  <rect x="80" y="378" width="1040" height="1" fill="#ffffff" opacity="0.2"/>
+
+  <!-- RELAY - small caps right-aligned -->
+  <text
+    x="1118"
+    y="408"
+    font-family="'DM Sans', sans-serif"
+    font-weight="300"
+    font-size="22"
+    fill="#aaaaaa"
+    letter-spacing="8"
+    text-anchor="end"
+  >RELAY</text>
+
+  <!-- Tagline bottom left -->
+  <text
+    x="80"
+    y="560"
+    font-family="'DM Sans', sans-serif"
+    font-weight="300"
+    font-size="18"
+    fill="#555555"
+    letter-spacing="3"
+  >META ADS . VIDEOGRAPHY . PHOTOGRAPHY . AUSTRALIA</text>
+
+</svg>

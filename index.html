@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNQFQWV8');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Motion Relay runs digital ads exclusively for Australian electricians. Run by an ex-sparky who knows what a real lead looks like. No lock-ins, no fluff."/>
+<meta name="keywords" content="digital ads for electricians Australia, google ads sparkies, facebook ads electricians, electrician lead generation, sparky marketing Australia, ads agency for electricians"/>
+<meta name="author" content="Motion Relay"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://motionrelayco.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://motionrelayco.com/"/>
+<meta property="og:title" content="Motion Relay. Digital Ads for Australian Sparkies."/>
+<meta property="og:description" content="More jobs. Less guesswork. Digital ads built exclusively for Australian electricians, run by an ex-sparky."/>
+<meta property="og:image" content="https://motionrelayco.com/og-image.svg"/>
+<meta property="og:site_name" content="Motion Relay"/>
+<meta property="og:locale" content="en_AU"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Motion Relay. Digital Ads for Australian Sparkies."/>
+<meta name="twitter:description" content="More jobs. Less guesswork. Built by an ex-sparky."/>
+<meta name="twitter:image" content="https://motionrelayco.com/og-image.svg"/>
+<title>Motion Relay. Digital Ads for Australian Sparkies.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --black:#0a0a0a;
+  --offblack:#111111;
+  --charcoal:#1c1c1c;
+  --green:#1a3a2a;
+  --green-mid:#2a5a40;
+  --green-bright:#3d7a58;
+  --green-glow:rgba(61,122,88,.18);
+  --white:#f5f5f0;
+  --grey-light:#d4d4cc;
+  --grey-mid:#8a8a82;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',sans-serif;
+  --mono:'Space Mono',monospace;
+}
+
+html{
+  scroll-snap-type:y mandatory;
+  overflow-y:scroll;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:var(--sans);
+  font-weight:300;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+a{color:inherit;text-decoration:none}
+
+/* ── GRAIN OVERLAY ── */
+body::after{
+  content:'';
+  position:fixed;inset:0;
+  pointer-events:none;z-index:9999;
+  opacity:.028;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ── SCROLL SNAP SECTIONS ── */
+.snap{
+  scroll-snap-align:start;
+  scroll-snap-stop:always;
+  min-height:100vh;
+  position:relative;
+}
+
+/* ── HERO ── */
+#hero{
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% -10%, rgba(61,122,88,.28) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 85% 110%, rgba(26,58,42,.2) 0%, transparent 60%),
+    var(--black);
+}
+
+/* ── HERO VIDEO/PHOTO SLOT ── */
+#hero-media{
+  position:absolute;inset:0;z-index:0;
+  /*
+    ╔══════════════════════════════════════════════════════════╗
+    ║  HERO MEDIA — ADD YOUR VIDEO OR PHOTO HERE              ║
+    ║  Option A (video):                                      ║
+    ║    <video src="videos/reel.mp4" autoplay muted loop     ║
+    ║     playsinline style="width:100%;height:100%;           ║
+    ║     object-fit:cover;opacity:.35">                      ║
+    ║  Option B (photo):                                      ║
+    ║    Set background-image below                           ║
+    ║    e.g. url('photos/hero.jpg')                          ║
+    ╚══════════════════════════════════════════════════════════╝
+  */
+  background-image: none;
+  background-size:cover;
+  background-position:center;
+  opacity:.35;
+}
+#hero-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom, rgba(10,10,10,.3) 0%, rgba(10,10,10,.7) 100%);
+}
+
+.hero-content{position:relative;z-index:2;padding:0 24px;max-width:900px;width:100%;}
+
+.hero-eyebrow{
+  font-family:var(--mono);
+  font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--green-bright);
+  margin-bottom:40px;
+  display:flex;align-items:center;justify-content:center;gap:16px;
+  opacity:0;animation:fadeUp .9s .3s forwards;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{
+  content:'';display:block;width:28px;height:1px;background:var(--green-bright);
+}
+
+.hero-line1{
+  font-family:var(--serif);
+  font-style:italic;font-weight:700;
+  font-size:clamp(3.5rem,10vw,9rem);
+  color:var(--white);
+  line-height:.88;letter-spacing:-.04em;
+  margin-bottom:8px;
+  opacity:0;animation:fadeUp 1s .5s forwards;
+}
+.hero-line2{
+  font-family:var(--sans);
+  font-weight:600;
+  font-size:clamp(2.2rem,7vw,6.5rem);
+  color:var(--white);
+  line-height:.95;letter-spacing:-.03em;
+  margin-bottom:40px;
+  opacity:0;animation:fadeUp 1s .65s forwards;
+}
+
+.hero-rule{
+  width:1px;height:60px;
+  background:linear-gradient(to bottom,var(--green-bright),transparent);
+  margin:0 auto 32px;
+  opacity:0;animation:fadeUp .8s .85s forwards;
+}
+
+.hero-sub{
+  font-size:clamp(.85rem,1.5vw,.95rem);
+  color:var(--grey-mid);
+  line-height:1.8;
+  max-width:520px;
+  margin:0 auto 44px;
+  opacity:0;animation:fadeUp .9s .95s forwards;
+}
+
+.hero-ctas{
+  display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .9s 1.1s forwards;
+}
+.btn-primary{
+  font-family:var(--mono);font-size:.65rem;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--black);
+  background:var(--white);
+  padding:16px 36px;
+  border:1px solid var(--white);
+  transition:background .3s,color .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:var(--green-bright);
+  transform:translateX(-101%);
+  transition:transform .35s cubic-bezier(.77,0,.18,1);
+}
+.btn-primary:hover::before{transform:translateX(0)}
+.btn-primary span{position:relative;z-index:1}
+.btn-primary:hover{color:var(--white);border-color:var(--green-bright)}
+
+.btn-ghost{
+  font-family:var(--mono);font-size:.58rem;
+  letter-spacing:.15em;text-transform:uppercase;
+  color:var(--grey-mid);
+  border-bottom:1px solid var(--charcoal);
+  padding-bottom:3px;
+  transition:color .25s,border-color .25s;
+}
+.btn-ghost:hover{color:var(--white);border-color:var(--grey-mid)}
+
+.hero-location{
+  display:block;margin-top:28px;
+  font-family:var(--mono);font-size:.52rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(255,255,255,.2);
+  opacity:0;animation:fadeUp .8s 1.3s forwards;
+}
+
+.scroll-indicator{
+  position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+  z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;
+  opacity:0;animation:fadeUp .8s 1.5s forwards;
+}
+.scroll-indicator span{
+  font-family:var(--mono);font-size:.48rem;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(255,255,255,.25);
+}
+.scroll-line{
+  width:1px;height:44px;
+  background:linear-gradient(to bottom,var(--green-bright),transparent);
+  animation:pulse 2s infinite;
+}
+
+/* ── ABOUT SECTION ── */
+#about{
+  display:flex;align-items:center;
+  padding:0;
+  background:
+    radial-gradient(ellipse 60% 60% at 0% 50%, rgba(26,58,42,.12) 0%, transparent 60%),
+    var(--black);
+  border-top:1px solid var(--charcoal);
+}
+
+.about-inner{
+  width:100%;max-width:1200px;
+  margin:0 auto;
+  padding:100px 64px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+  align-items:center;
+}
+
+/* ── ABOUT PHOTO SLOT ── */
+.about-media{
+  position:relative;
+  aspect-ratio:4/5;
+  background:var(--charcoal);
+  overflow:hidden;
+  border:1px solid var(--green);
+  /*
+    ╔══════════════════════════════════════════════════════════╗
+    ║  ABOUT PHOTO — Add your photo here                      ║
+    ║  Replace background-image: none with:                   ║
+    ║  background-image: url('photos/you-working.jpg')        ║
+    ║  background-size: cover;                                ║
+    ║  background-position: center;                           ║
+    ╚══════════════════════════════════════════════════════════╝
+  */
+  background-image: none;
+  background-size:cover;
+  background-position:center;
+}
+.about-media::after{
+  content:'ADD PHOTO HERE';
+  position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--green-mid);
+  border:1px dashed var(--green);
+  margin:24px;
+}
+.about-media-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(10,10,10,.6) 0%, transparent 50%);
+  z-index:1;
+}
+.about-media-tag{
+  position:absolute;bottom:20px;left:20px;z-index:2;
+  font-family:var(--mono);font-size:.5rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green-bright);
+  border:1px solid var(--green-mid);
+  padding:5px 12px;
+}
+
+.about-content{}
+.sec-num{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:var(--green-bright);margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.sec-num::before{content:'';display:block;width:20px;height:1px;background:var(--green-bright);}
+
+.about-heading{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2rem,3.5vw,3.2rem);
+  letter-spacing:-.03em;line-height:1.05;
+  color:var(--white);margin-bottom:32px;
+}
+.about-heading em{font-style:italic;font-weight:400;color:var(--green-bright);}
+
+.about-body p{
+  font-size:.92rem;line-height:1.9;
+  color:var(--grey-mid);margin-bottom:20px;
+}
+.about-body p:last-child{color:var(--white);font-weight:400;}
+
+/* ── HOW IT WORKS ── */
+#how{
+  display:flex;align-items:center;
+  background:
+    radial-gradient(ellipse 70% 70% at 100% 50%, rgba(61,122,88,.1) 0%, transparent 60%),
+    var(--offblack);
+  border-top:1px solid var(--charcoal);
+}
+.how-inner{
+  width:100%;max-width:1200px;
+  margin:0 auto;
+  padding:100px 64px;
+}
+.how-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  margin-bottom:64px;flex-wrap:wrap;gap:24px;
+}
+.how-heading{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2.2rem,4vw,3.8rem);
+  letter-spacing:-.03em;line-height:1;
+  color:var(--white);
+}
+.how-heading em{font-style:italic;font-weight:400;color:var(--grey-mid);}
+.how-sub-text{
+  font-size:.82rem;color:var(--grey-mid);
+  max-width:280px;line-height:1.7;text-align:right;
+}
+
+.how-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--charcoal);
+}
+.how-card{
+  padding:40px 32px 36px;
+  border-right:1px solid var(--charcoal);
+  position:relative;
+  transition:background .35s;
+}
+.how-card:last-child{border-right:none}
+.how-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--green-bright),transparent);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s cubic-bezier(.77,0,.18,1);
+}
+.how-card:hover{background:rgba(61,122,88,.06)}
+.how-card:hover::before{transform:scaleX(1)}
+
+.how-num{
+  font-family:var(--mono);font-size:.52rem;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:var(--green-bright);margin-bottom:28px;
+  display:flex;align-items:center;gap:8px;
+}
+.how-num::after{content:'';flex:1;height:1px;background:var(--charcoal);}
+.how-title{
+  font-family:var(--serif);font-size:1.15rem;font-weight:700;
+  color:var(--white);margin-bottom:14px;letter-spacing:-.01em;
+}
+.how-desc{font-size:.82rem;line-height:1.75;color:var(--grey-mid);}
+
+/* ── PARALLAX BREAK ── */
+#parallax-break{
+  scroll-snap-align:none;
+  min-height:60vh;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;overflow:hidden;
+  background-color:var(--green);
+  /*
+    ╔══════════════════════════════════════════════════════════╗
+    ║  PARALLAX PHOTO — Full-width between-section image      ║
+    ║  Replace background-image: none with:                   ║
+    ║  background-image: url('photos/sparky-panel.jpg')       ║
+    ║  Recommended: moody dark electrical work photo           ║
+    ╚══════════════════════════════════════════════════════════╝
+  */
+  background-image:none;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+#parallax-break::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(10,10,10,.85) 0%,rgba(26,58,42,.6) 100%);
+}
+.parallax-content{
+  position:relative;z-index:1;
+  text-align:center;padding:0 32px;max-width:760px;
+}
+.parallax-quote{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(1.8rem,4vw,3.2rem);
+  color:rgba(255,255,255,.9);line-height:1.25;
+  margin-bottom:24px;
+}
+.parallax-attr{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.25em;text-transform:uppercase;
+  color:var(--green-bright);
+}
+
+/* ── PRICING ── */
+#pricing{
+  display:flex;align-items:center;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(26,58,42,.18) 0%, transparent 65%),
+    var(--black);
+  border-top:1px solid var(--charcoal);
+}
+.pricing-inner{
+  width:100%;max-width:1000px;
+  margin:0 auto;
+  padding:100px 64px;
+}
+.pricing-eyebrow{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.28em;text-transform:uppercase;
+  color:var(--green-bright);margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.pricing-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--green-bright);}
+
+.pricing-heading{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2.2rem,4vw,3.8rem);
+  letter-spacing:-.03em;line-height:1.05;
+  color:var(--white);margin-bottom:12px;
+}
+.pricing-heading em{font-style:italic;font-weight:400;color:var(--grey-mid);}
+.pricing-subhead{
+  font-size:.85rem;color:var(--grey-mid);
+  margin-bottom:56px;line-height:1.6;
+}
+
+.pricing-card{
+  border:1px solid var(--charcoal);
+  padding:56px 52px;
+  position:relative;
+  background:var(--offblack);
+  transition:border-color .35s;
+  overflow:hidden;
+}
+.pricing-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(to right,transparent,var(--green-bright),transparent);
+}
+.pricing-card:hover{border-color:var(--green-mid);}
+
+.pricing-card-label{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--green-bright);margin-bottom:24px;
+}
+.pricing-setup{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(2.8rem,5vw,4.5rem);
+  letter-spacing:-.04em;line-height:1;
+  color:var(--white);margin-bottom:4px;
+}
+.pricing-monthly{
+  font-family:var(--sans);font-size:1.1rem;font-weight:400;
+  color:var(--grey-mid);margin-bottom:8px;
+}
+.pricing-terms{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.12em;color:var(--green-bright);
+  margin-bottom:40px;
+}
+.pricing-divider{
+  border:none;border-top:1px solid var(--charcoal);margin-bottom:32px;
+}
+.pricing-includes{
+  font-family:var(--mono);font-size:.52rem;
+  letter-spacing:.25em;text-transform:uppercase;
+  color:var(--grey-mid);margin-bottom:20px;
+}
+.pricing-list{
+  list-style:none;
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:12px 40px;
+  margin-bottom:40px;
+}
+.pricing-list li{
+  display:flex;align-items:flex-start;gap:12px;
+  font-size:.85rem;line-height:1.5;color:var(--grey-light);
+}
+.pricing-list li::before{
+  content:'→';color:var(--green-bright);flex-shrink:0;font-size:.8rem;margin-top:2px;
+}
+.pricing-disclaimer{
+  font-size:.75rem;font-style:italic;
+  color:var(--grey-mid);
+  border-top:1px solid var(--charcoal);
+  padding-top:24px;margin-bottom:40px;line-height:1.7;
+}
+.pricing-cta{
+  display:inline-block;
+  font-family:var(--mono);font-size:.65rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--black);background:var(--white);
+  padding:18px 44px;
+  position:relative;overflow:hidden;
+  transition:color .3s;border:1px solid var(--white);
+}
+.pricing-cta::before{
+  content:'';position:absolute;inset:0;
+  background:var(--green-bright);
+  transform:translateX(-101%);
+  transition:transform .35s cubic-bezier(.77,0,.18,1);
+}
+.pricing-cta span{position:relative;z-index:1}
+.pricing-cta:hover{color:var(--white);border-color:var(--green-bright)}
+.pricing-cta:hover::before{transform:translateX(0)}
+
+.pricing-footnote{
+  margin-top:28px;
+  font-family:var(--mono);font-size:.52rem;
+  letter-spacing:.1em;
+  color:var(--grey-mid);
+  text-align:center;line-height:1.8;
+}
+.pricing-footnote span{color:var(--green-bright);}
+
+/* ── CTA BAND ── */
+#cta{
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 50%, rgba(61,122,88,.15) 0%, transparent 70%),
+    var(--offblack);
+  border-top:1px solid var(--charcoal);
+  overflow:hidden;
+}
+.cta-inner{position:relative;z-index:1;padding:0 32px;max-width:800px;}
+.cta-label{
+  font-family:var(--mono);font-size:.55rem;
+  letter-spacing:.3em;text-transform:uppercase;
+  color:var(--green-bright);margin-bottom:32px;
+  display:flex;align-items:center;justify-content:center;gap:16px;
+}
+.cta-label::before,.cta-label::after{content:'';display:block;width:24px;height:1px;background:var(--green-bright);}
+.cta-l1{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(2.2rem,5vw,5.5rem);
+  color:rgba(255,255,255,.45);
+  line-height:1;margin-bottom:8px;
+}
+.cta-l2{
+  font-family:var(--sans);font-weight:600;
+  font-size:clamp(2.2rem,5vw,5.5rem);
+  color:var(--white);
+  line-height:1;letter-spacing:-.03em;margin-bottom:56px;
+}
+.cta-btn{
+  display:inline-block;
+  font-family:var(--mono);font-size:.65rem;font-weight:700;
+  letter-spacing:.2em;text-transform:uppercase;
+  color:var(--white);
+  border:1px solid var(--green-mid);
+  padding:20px 52px;
+  position:relative;overflow:hidden;
+  transition:color .3s;
+}
+.cta-btn::before{
+  content:'';position:absolute;inset:0;
+  background:var(--green-bright);
+  transform:translateX(-101%);
+  transition:transform .35s cubic-bezier(.77,0,.18,1);
+}
+.cta-btn span{position:relative;z-index:1}
+.cta-btn:hover{color:var(--black)}
+.cta-btn:hover::before{transform:translateX(0)}
+
+/* ── FOOTER ── */
+footer{
+  scroll-snap-align:none;
+  background:var(--black);
+  border-top:1px solid var(--charcoal);
+  padding:56px 64px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:40px;align-items:start;
+}
+.ft-logo{margin-bottom:12px}
+.ft-wordmark{
+  font-family:var(--serif);font-style:italic;font-weight:700;
+  font-size:1.25rem;letter-spacing:-.02em;color:var(--white);line-height:.95;
+}
+.ft-sub-row{display:flex;align-items:center;gap:6px;margin-top:4px;width:140px;}
+.ft-line{flex:1;height:1px;background:rgba(255,255,255,.15);}
+.ft-relay{
+  font-family:var(--sans);font-weight:300;font-size:.36rem;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--grey-mid);white-space:nowrap;
+}
+.ft-copy{font-family:var(--mono);font-size:.55rem;color:var(--grey-mid);line-height:2;}
+.ft-nav{display:flex;flex-direction:column;gap:14px;align-items:center;}
+.ft-nav a{
+  font-family:var(--mono);font-size:.58rem;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--grey-mid);transition:color .25s;
+}
+.ft-nav a:hover{color:var(--white)}
+.ft-contact{text-align:right;}
+.ft-contact p{font-family:var(--mono);font-size:.58rem;color:var(--grey-mid);line-height:2.2;}
+.ft-contact a{color:var(--grey-mid);transition:color .25s;}
+.ft-contact a:hover{color:var(--white)}
+.ft-socials{display:flex;gap:20px;justify-content:flex-end;margin-top:12px;}
+.ft-socials a{
+  font-family:var(--mono);font-size:.5rem;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--charcoal);border-bottom:1px solid var(--charcoal);padding-bottom:1px;
+  transition:color .25s,border-color .25s;
+}
+.ft-socials a:hover{color:var(--green-bright);border-color:var(--green-bright)}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:none}
+}
+@keyframes pulse{
+  0%,100%{opacity:1}50%{opacity:.25}
+}
+
+/* ── SCROLL REVEAL ── */
+.sr{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease;}
+.sr.visible{opacity:1;transform:none;}
+.sr-left{transform:translateX(-28px);}
+.sr-right{transform:translateX(28px);}
+.sr-left.visible,.sr-right.visible{transform:none;}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  html{scroll-snap-type:none}
+  .sr{opacity:1;transform:none;transition:none}
+  .about-inner{grid-template-columns:1fr;gap:48px;padding:72px 24px;}
+  .about-media{aspect-ratio:16/9}
+  .how-inner{padding:72px 24px}
+  .how-grid{grid-template-columns:1fr 1fr}
+  .how-header{flex-direction:column;align-items:flex-start;}
+  .how-sub-text{text-align:left}
+  .pricing-inner{padding:72px 24px}
+  .pricing-card{padding:36px 24px}
+  .pricing-list{grid-template-columns:1fr}
+  .cta-inner{padding:0 24px}
+  footer{grid-template-columns:1fr;gap:32px;padding:48px 24px}
+  .ft-nav{align-items:flex-start}
+  .ft-contact{text-align:left}
+  .ft-socials{justify-content:flex-start}
+  #parallax-break{background-attachment:scroll}
+  .hero-content{padding:0 20px}
+}
+@media(max-width:480px){
+  .how-grid{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNQFQWV8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNQFQWV8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--════════ 01. HERO ════════-->
+<section class="snap" id="hero">
+  <div id="hero-media"></div>
+  <div id="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Digital ads built for Australian sparkies</p>
+    <p class="hero-line1">More jobs.</p>
+    <p class="hero-line2">Less guesswork.</p>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">The only ad agency built exclusively for Australian electricians. Run by an ex-sparky who got tired of watching mates waste money on campaigns that did nothing.</p>
+    <div class="hero-ctas">
+      <a href="contact.html" class="btn-primary"><span>Book a 15-min Chat</span></a>
+      <a href="#how" class="btn-ghost">See how it works</a>
+    </div>
+    <span class="hero-location">Currently based in Brisbane. Servicing sparkies nationwide.</span>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!--════════ 02. ABOUT ════════-->
+<section class="snap" id="about">
+  <div class="about-inner">
+
+    <!--
+      ┌─────────────────────────────────────────┐
+      │  PHOTO SLOT — Replace with your image   │
+      │  See CSS comment on #about-media above  │
+      └─────────────────────────────────────────┘
+    -->
+    <div class="about-media sr sr-left">
+      <div class="about-media-overlay"></div>
+      <div class="about-media-tag">On The Tools</div>
+    </div>
+
+    <div class="about-content sr sr-right">
+      <div class="sec-num">01 / About</div>
+      <h2 class="about-heading">Most agencies have never picked up a tool. <em>I have.</em></h2>
+      <div class="about-body">
+        <p>I spent years on the tools as a qualified electrician in Australia before making the move into marketing. I know the difference between a lead worth quoting and one that wastes your afternoon. I know what a good job looks like, what it takes to win it, and what it's worth when you do.</p>
+        <p>Motion Relay was built because I watched too many good sparkies waste money on agencies that didn't understand the trade. The ones that talk in impressions and reach instead of jobs booked. The ones that run the same campaign for a sparky as they do for a dentist. The ones that lock you in for 12 months then ghost you for bigger clients.</p>
+        <p>We do things differently.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--════════ 03. HOW IT WORKS ════════-->
+<section class="snap" id="how">
+  <div class="how-inner">
+    <div class="how-header sr">
+      <div>
+        <div class="sec-num">02 / What You Get</div>
+        <h2 class="how-heading">Everything you need.<br/><em>Nothing you don't.</em></h2>
+      </div>
+      <p class="how-sub-text">Built for solo and small operators. 1 to 3 vans.</p>
+    </div>
+    <div class="how-grid sr">
+      <div class="how-card">
+        <div class="how-num">01</div>
+        <div class="how-title">Strategy and setup</div>
+        <p class="how-desc">Campaign strategy, audience targeting and lead funnel built for your trade and service area. No cookie-cutter playbooks.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">02</div>
+        <div class="how-title">Creative and landing page</div>
+        <p class="how-desc">3 ad creatives produced and tested each month. A landing page built to convert cold scrollers into booked jobs.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">03</div>
+        <div class="how-title">Leads to your phone</div>
+        <p class="how-desc">SMS notifications the second a lead comes in. No checking dashboards. Quote it, win it, move on.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">04</div>
+        <div class="how-title">Plain English reports</div>
+        <p class="how-desc">Monthly one-page report. Jobs booked, cost per job, return on ad spend. No fluff, no jargon, no padding.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--════════ PARALLAX BREAK ════════-->
+<div id="parallax-break">
+  <div class="parallax-content">
+    <p class="parallax-quote">"Built by someone who's actually been on the tools."</p>
+    <p class="parallax-attr">Motion Relay. Brisbane, Australia.</p>
+  </div>
+</div>
+
+<!--════════ 04. PRICING ════════-->
+<section class="snap" id="pricing">
+  <div class="pricing-inner">
+    <div class="pricing-eyebrow sr">Transparent Pricing</div>
+    <h2 class="pricing-heading sr">No quotes. <em>No proposals.</em><br/>Here's what it costs.</h2>
+    <p class="pricing-subhead sr">No 12-month lock-ins. No fluff. Just leads to your phone.</p>
+
+    <div class="pricing-card sr">
+      <div class="pricing-card-label">Lead Engine</div>
+      <div class="pricing-setup">$797 setup</div>
+      <div class="pricing-monthly">+ $997/month management</div>
+      <div class="pricing-terms">Month-to-month. No lock-ins. Cancel anytime with 30 days notice.</div>
+      <hr class="pricing-divider"/>
+      <p class="pricing-includes">What's Included</p>
+      <ul class="pricing-list">
+        <li>Strategy and audience build for your trade and service area</li>
+        <li>SMS notifications the second a lead comes in</li>
+        <li>Landing page built to convert cold scrollers into jobs</li>
+        <li>3 ad creatives produced and tested every month</li>
+        <li>Daily monitoring and weekly optimisation</li>
+        <li>WhatsApp access during business hours</li>
+        <li>Monthly performance report. Jobs booked, cost per job, ROAS.</li>
+      </ul>
+      <p class="pricing-disclaimer">You pay the ad platform directly for your ad spend. We recommend $1,500 to $3,000 per month to start. We never touch your budget. Keeps everything clean.</p>
+      <a href="contact.html" class="pricing-cta"><span>Book a 15-min Chat</span></a>
+    </div>
+
+    <p class="pricing-footnote sr">Currently taking on a small number of founding clients at a reduced rate. <span>Mention this on your call.</span></p>
+  </div>
+</section>
+
+<!--════════ 05. CTA ════════-->
+<section class="snap" id="cta">
+  <div class="cta-inner">
+    <div class="cta-label">Ready?</div>
+    <p class="cta-l1">Ready to stop wasting money on ads</p>
+    <p class="cta-l2">that don't book jobs?</p>
+    <a href="contact.html" class="cta-btn"><span>Book a 15-min Chat →</span></a>
+  </div>
+</section>
+
+<!--════════ FOOTER ════════-->
+<footer>
+  <div>
+    <div class="ft-logo">
+      <div class="ft-wordmark">Motion</div>
+      <div class="ft-sub-row">
+        <div class="ft-line"></div>
+        <div class="ft-relay">Relay</div>
+      </div>
+    </div>
+    <p class="ft-copy">© 2025 Motion Relay.<br/>All rights reserved.<br/>Brisbane, Australia.<br/>ABN: <span id="abn-number">[ADD ABN HERE]</span></p>
+  </div>
+  <nav class="ft-nav">
+    <a href="#how">How It Works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="contact.html">Book a Call</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+  <div class="ft-contact">
+    <p><a href="mailto:hello@motionrelayco.com">hello@motionrelayco.com</a></p>
+    <p>Brisbane, Australia.<br/>Servicing sparkies nationwide.</p>
+    <div class="ft-socials">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll reveal
+(function(){
+  function check(){
+    document.querySelectorAll('.sr').forEach(function(el){
+      if(el.getBoundingClientRect().top < window.innerHeight - 80){
+        el.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll',check,{passive:true});
+  setTimeout(check,100);
+
+  // Hero video support
+  try{
+    var hv=document.getElementById('heroVid');
+    if(hv&&hv.getAttribute('src')&&hv.getAttribute('src')!==''){
+      hv.style.display='block';
+      document.getElementById('hero-media').style.background='none';
+    }
+  }catch(e){}
+})();
+</script>
+<script src="header.js"></script>
+</body>
+</html>
